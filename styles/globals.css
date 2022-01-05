@@ -4,7 +4,7 @@
 
 @layer components {
     .nav_link {
-        @apply text-[1.30rem] capitalize border-gray-300 hover:border-b cursor-pointer pb-2 text-center
+        @apply text-[1.30rem] capitalize border-purple-500 hover:border-b cursor-pointer pb-2 text-center
     }
     .active {
         @apply border-b
