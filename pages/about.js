@@ -15,6 +15,7 @@ import { useTranslation } from 'next-i18next';
 // installed packages
 import { IoIosArrowDown } from 'react-icons/io'
 import gsap, {timeline, Power3} from 'gsap'
+import Footer from "../components/Footer";
 
 // global static props
 export async function getStaticProps({ locale }) {
@@ -64,6 +65,8 @@ const about = () => {
         <Transition />
         <Navbar />
       </div>
+
+      <Footer />
     </div>
   );
 };

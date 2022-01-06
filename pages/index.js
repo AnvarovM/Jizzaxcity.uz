@@ -6,7 +6,8 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next';
 import gsap, {timeline, Power3} from 'gsap'
-import Image from "next/image";
+import Footer from '../components/Footer';
+
 
 
 export async function getStaticProps({ locale }) {
@@ -57,7 +58,7 @@ export default function Home() {
         </span>
       </div>
       <Navbar />
-      salom
+      <Footer />
     </div>
   );
 }
