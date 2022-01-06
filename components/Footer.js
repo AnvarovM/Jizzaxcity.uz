@@ -10,7 +10,7 @@ const Footer = () => {
     const router = useRouter()
   return (
     <div className="relative w-full h-full">
-      <div className="w-full h-52 md:h-64">
+      <div className="w-full h-48 md:h-64">
         <Image
           layout="fill"
           objectFit="cover"

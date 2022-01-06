@@ -13,7 +13,7 @@ function Transition() {
     })
     return (
         <div className=''>
-           <div className="absolute top-0 z-50 w-full h-screen bg-purple-500 bg-opacity-90" ref={trans}></div> 
+           <div className="absolute top-0 z-50 w-full h-screen bg-opacity-95 bg-purple-500" ref={trans}></div> 
         </div>
     )
 }
