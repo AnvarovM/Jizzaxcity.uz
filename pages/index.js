@@ -2,7 +2,11 @@ import React, {useRef, useEffect} from 'react'
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Transition from "../components/Transiton";
+import { IoIosArrowDown } from 'react-icons/io'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next';
+import gsap, {timeline, Power3} from 'gsap'
+import Image from "next/image";
 
 
 export async function getStaticProps({ locale }) {
@@ -14,6 +18,18 @@ export async function getStaticProps({ locale }) {
 }
 
 export default function Home() {
+  const { t } = useTranslation();
+  const headingRef = useRef(null);
+  const tl = gsap.timeline()
+
+  useEffect(() => {
+    tl.from(headingRef.current, {
+      duration: 1,
+      marginBottom: 50,
+      opacity: 0,
+      ease: Power3.easeInOut
+    }, "+=1")
+  }, [])
   return (
     <div className="font-montserrat">
       <Head>
@@ -33,6 +49,12 @@ export default function Home() {
           <source src="/video/building_video.mp4" type="video/mp4" />
         </video>
         <div className="absolute top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center bg-black opacity-70 bg-gradient-to-r from-[#0c0c0c] to-[#130f40]"></div>
+        <div className="absolute top-1/2 right-0 left-0 transform -translate-y-1/2 text-center text-white uppercase group">
+          <h1 ref={headingRef} className="text-3xl font-medium md:text-5xl lg:text-6xl md:font-semibold tracking-tight md:tracking-wider md:group-hover:tracking-widest select-none  transition-all duration-200">{t("home:home_hello")}, <br /> <span className='text-2xl md:text-5xl tracking-wide md:tracking-wider md:group-hover:tracking-widest transition-all duration-200'> {t("home:home_welcome")} </span> </h1>
+        </div>
+        <span className="absolute bottom-14 right-0 left-0 text-center text-white">
+            <IoIosArrowDown className="mx-auto text-5xl md:text-6xl animate-bounce" />
+        </span>
       </div>
       <Navbar />
       salom

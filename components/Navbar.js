@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="">
       <div className="container px-4 md:px-0 fixed top-0 left-0 right-0 mx-auto flex items-center justify-between text-white my-0 md:my-4 py-8">
-        <div className="flex justify-items-end text-2xl font-semibold cursor-pointer hover:text-gray-300">
+        <div onClick={() => router.push("/")} className="flex justify-items-end text-2xl leading-4 md:leading-6 font-semibold cursor-pointer hover:text-gray-300">
             <span>Jizzax</span> <br />
             city
         </div>

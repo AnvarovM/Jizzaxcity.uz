@@ -5,10 +5,10 @@ function Transition() {
     const timeline = gsap.timeline()
     useEffect(() => {
         timeline.to(trans.current, {
-            duration: 3,
+            duration: 2,
             y: window.innherWidth,
             yPercent: -100,
-            ease: Power4.easeOut
+            ease: Power4.easeInOut
         });
     })
     return (
