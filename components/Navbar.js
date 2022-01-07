@@ -41,7 +41,7 @@ const Navbar = () => {
           </ul>
 
           <div className="flex items-center space-x-4">
-              <div className="hidden md:inline-flex items-center justify-center bg-purple-700 hover:bg-purple-600 rounded-full p-2 cursor-pointer">
+              <div className="hidden md:inline-flex items-center justify-center bg-purple-700 hover:bg-purple-600 active:bg-purple-800 rounded-full p-2 cursor-pointer">
                   <SearchIcon className="h-5" />
               </div>
               <div className="relative">
