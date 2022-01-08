@@ -63,8 +63,8 @@ const about = () => {
         </span>
 
         {/* components */}
-        {/* <Transition /> */}
-        <StaggerTransition />
+        <Transition />
+        {/* <StaggerTransition /> */}
         <Navbar />
       </div>
 
