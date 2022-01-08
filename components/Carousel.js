@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi'
 
 const Carousel = () => {
   const [current, setCurrent] = useState(0);
+  const router = useRouter()
 
   const nextSlides = () => {
       setCurrent(current === length - 1 ? 0 : current + 1);
@@ -21,13 +23,13 @@ const Carousel = () => {
     },
     {
       id: "02",
-      heading: "Modern design of houses in europe \n tha is amazing",
+      heading: "That si amazing we build big building",
       paragraph: "paragraph second",
       btn: "go contact",
     },
     {
       id: "03",
-      heading: "Modern design of houses in europe \n tha is amazing",
+      heading: "Our company have lot's of experience",
       paragraph: "paragraph third",
       btn: "go contact",
     },
@@ -52,7 +54,7 @@ const Carousel = () => {
                         <div className="space-y-4 md:space-y-6 max-w-screen-2xl md:max-w-screen-lg">
                             <p className="text-3xl font-semibold">{slide.paragraph}</p>
                             <h1 className="text-4xl md:text-6xl font-semibold">{slide.heading}</h1>
-                            <button className="text-xl font-medium hover:bg-white hover:bg-opacity-20 hover:backdrop-filter hover:backdrop-blur-md py-4 px-6 border tracking-wider">{slide.btn}</button>
+                            <button onClick={() => router.push('/contact')} className="text-xl font-medium hover:bg-white hover:bg-opacity-20 hover:backdrop-filter hover:backdrop-blur-md py-4 px-6 border tracking-wider">{slide.btn}</button>
                             <div className="flex justify-center w-fit space-x-2 md:space-x-4">
                                 <p onClick={prevSlides} className="arrows">↼</p>
                                 <p onClick={nextSlides} className="arrows">⇁</p>

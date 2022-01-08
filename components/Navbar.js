@@ -24,7 +24,7 @@ const Navbar = () => {
     }, []);
 
   return (
-    <div className=''>
+    <div>
       <div className={show ?  "px-4  md:px-0 fixed top-0 left-0 right-0 z-40 text-white my-0 py-8 transition-all duration-200": "px-4 md:px-0 z-40 bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg fixed top-0 left-0 right-0 text-white my-0 py-4 transition-all duration-200"}>
         <div className="container mx-auto flex items-center justify-between ">
           <div onClick={() => router.push("/")} className="flex justify-items-end text-2xl leading-4 md:leading-6 font-semibold cursor-pointer hover:text-gray-300">

@@ -1,14 +1,25 @@
-import React, {useRef, useEffect} from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+
+// next js
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Transition from "../components/Transiton";
-import { IoIosArrowDown } from 'react-icons/io'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+// next js internalization
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+
+// installed packages
+import { IoIosArrowDown } from 'react-icons/io'
 import gsap, {timeline, Power3} from 'gsap'
-import Footer from '../components/Footer';
+
+// components
+import Navbar from "../components/Navbar";
+import ToTop from '../components/ToTop'
 import Carousel from '../components/Carousel';
+import Transition from "../components/Transition";
 import Section1 from '../components/indexMain/Section1';
+import Section3 from '../components/indexMain/Section3';
+import Footer from '../components/Footer';
+import Foter from '../components/Footer';
 
 
 
@@ -22,8 +33,10 @@ export async function getStaticProps({ locale }) {
 
 export default function Home() {
   const { t } = useTranslation();
+
   const headingRef = useRef(null);
-  const tl = gsap.timeline()
+
+  const tl = gsap.timeline();
 
   useEffect(() => {
     tl.from(headingRef.current, {
@@ -32,7 +45,9 @@ export default function Home() {
       opacity: 0,
       ease: Power3.easeInOut
     }, "+=1")
-  }, [])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [headingRef]);
+
   return (
     <div className="font-montserrat">
       <Head>
@@ -52,34 +67,24 @@ export default function Home() {
         >
           <source src="/video/building_video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center bg-black opacity-70 bg-gradient-to-r from-[#0c0c0c] to-[#130f40]"></div>
+        <div className="absolute top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center opacity-70 bg-gradient-to-r from-[#0c0c0c] to-[#130f40]"></div>
           
             <div className="max-w-screen-2xl mx-auto">
               <Carousel />
             </div>
 
-          <span className="absolute bottom-14 right-0 left-0 text-center text-white">
+          <span id='#section1' className="absolute bottom-14 right-0 left-0 text-center text-white cursor-pointer">
               <IoIosArrowDown className="mx-auto text-5xl md:text-6xl animate-bounce" />
           </span>
       </div>
 
       {/* components */}
       <Navbar />
+      <ToTop />
       <Section1 />
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <Footer />
+      <Section3 />
+      {/* <Footer /> */}
+      <Foter />
 
     </div>
   );

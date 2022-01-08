@@ -3,30 +3,42 @@
 @tailwind utilities;
 
 @layer components {
-    .nav_link {
-        @apply text-[1.30rem] capitalize border-purple-500 hover:border-b cursor-pointer pb-2 text-center
-    }
-    .active {
-        @apply border-b
-    }
+  .nav_link {
+    @apply text-[1.30rem] capitalize border-purple-500 hover:border-b cursor-pointer pb-2 text-center;
+  }
+  .active {
+    @apply border-b;
+  }
 
-    .sidebar_link {
-        @apply text-center lg:text-left text-3xl font-medium px-4 text-white lg:border-l-4 lg:border-purple-600 cursor-pointer hover:text-purple-200 my-3 lg:my-2
-    }
+  .sidebar_link {
+    @apply text-center lg:text-left text-3xl font-medium px-4 text-white lg:border-l-4 lg:border-purple-600 cursor-pointer hover:text-purple-200 my-3 lg:my-2;
+  }
 
-    .sidebar_active {
-        @apply border-purple-700
-    }
+  .sidebar_active {
+    @apply border-purple-700;
+  }
 
-    .sidebar_-translate {
-        @apply fixed top-0 left-0 h-screen w-full lg:w-1/3 bg-white bg-opacity-20 transform -translate-x-full backdrop-filter backdrop-blur-md z-40 transition duration-500
-    }
+  .sidebar_-translate {
+    @apply fixed top-0 left-0 h-screen w-full lg:w-1/3 bg-white bg-opacity-20 transform -translate-x-full backdrop-filter backdrop-blur-md z-40 transition duration-500;
+  }
 
-    .sidebar_zero {
-        @apply fixed top-0 left-0 h-screen w-full lg:w-1/3 bg-white bg-opacity-20 transform translate-x-0 backdrop-filter backdrop-blur-md z-40 transition duration-500
-    }
+  .sidebar_zero {
+    @apply fixed top-0 left-0 h-screen w-full lg:w-1/3 bg-white bg-opacity-20 transform translate-x-0 backdrop-filter backdrop-blur-md z-40 transition duration-500;
+  }
 
-    .arrows {
-        @apply w-10 h-10 flex justify-center items-center cursor-pointer md:h-14 md:w-14 text-xl md:text-3xl rounded-full border hover:bg-white hover:bg-opacity-20 hover:backdrop-filter hover:backdrop-blur-md
-    }
+  .arrows {
+    @apply w-10 h-10 flex justify-center items-center cursor-pointer md:h-14 md:w-14 text-xl md:text-3xl rounded-full border hover:bg-white hover:bg-opacity-20 hover:backdrop-filter hover:backdrop-blur-md;
+  }
+
+  .top {
+@apply fixed bottom-8 right-8 z-50 sm:right-12 text-white;
+  }
+
+  .top.top-hidden {
+    @apply hidden;
+  }
+  
+  .footer-link {
+    @apply flex text-white text-sm cursor-pointer hover:underline
+  }
 }

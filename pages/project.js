@@ -1,12 +1,18 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useRef, useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Transition from "../components/Transiton";
+
+// next js
+import Image from "next/image";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from 'next-i18next';
+
+// installed packages
 import { IoIosArrowDown } from 'react-icons/io'
 import gsap, {timeline, Power3} from 'gsap'
-import { useTranslation } from 'next-i18next';
-import Image from "next/image";
+
+// components
+import Navbar from "../components/Navbar";
+import Transition from "../components/Transition";
 import Footer from "../components/Footer";
 
 export async function getStaticProps({ locale }) {

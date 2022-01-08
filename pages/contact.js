@@ -4,10 +4,6 @@ import { useRef, useEffect } from "react";
 // next js
 import Image from "next/image";
 
-// components
-import Navbar from "../components/Navbar";
-import Transition from "../components/Transiton";
-
 // next-i18next
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from 'next-i18next';
@@ -16,6 +12,10 @@ import { useTranslation } from 'next-i18next';
 import { IoIosArrowDown } from 'react-icons/io'
 import gsap, {timeline, Power3} from 'gsap'
 import Footer from "../components/Footer";
+
+// components
+import Navbar from "../components/Navbar";
+import Transition from "../components/Transition";
 
 // global static Props
 export async function getStaticProps({ locale }) {
