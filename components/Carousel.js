@@ -1,10 +1,14 @@
-import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi'
+
+import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi';
+
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 const Carousel = () => {
   const [current, setCurrent] = useState(0);
-  const router = useRouter()
+  const router = useRouter();
+  const { t } = useTranslation();
 
   const nextSlides = () => {
       setCurrent(current === length - 1 ? 0 : current + 1);
@@ -17,21 +21,21 @@ const Carousel = () => {
   const carousel_data = [
     {
       id: "01",
-      heading: "Modern design of houses in europe \n tha is amazing",
-      paragraph: "paragraph first",
-      btn: "go contact",
+      heading: `${t("home:header_carousel_heading_1")}`,
+      paragraph: `${t("home:header_carousel_p_1")}`,
+      btn: `${t("home:home_to_contact_btn")}`,
     },
     {
       id: "02",
-      heading: "That si amazing we build big building",
-      paragraph: "paragraph second",
-      btn: "go contact",
+      heading: `${t("home:header_carousel_heading_2")}`,
+      paragraph: `${t("home:header_carousel_p_2")}`,
+      btn: `${t("home:home_to_contact_btn")}`,
     },
     {
       id: "03",
-      heading: "Our company have lot's of experience",
-      paragraph: "paragraph third",
-      btn: "go contact",
+      heading: `${t("home:header_carousel_heading_3")}`,
+      paragraph: `${t("home:header_carousel_p_3")}`,
+      btn: `${t("home:home_to_contact_btn")}`,
     },
   ];
 

@@ -25,7 +25,7 @@ const ToTop = () => {
       {/* to top icon */}
       <div className={show ? "top top-hidden" : "top"}>
         <a href="#">
-          <BsChevronUp className="bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg text-white hover:text-slate-300 stroke-current stroke-2 h-10 w-10 md:h-12 md:w-12 p-3 border-2 rounded-2xl" />
+          <BsChevronUp className="bg-black bg-opacity-30 backdrop-filter backdrop-blur-lg text-white hover:text-slate-300 stroke-current stroke-2 h-10 w-10 md:h-12 md:w-12 p-3 border-2 rounded-2xl" />
         </a>
       </div>
     </div>

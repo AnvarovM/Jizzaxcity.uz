@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'montserrat': ['"Montserrat"', 'cursive'],
-        'poppins': ['"Poppins"', 'cursive'],
-        'lato': ['"Lato"', 'cursive'],
-      }
+        montserrat: ['"Montserrat"', "cursive"],
+        poppins: ['"Poppins"', "cursive"],
+        lato: ['"Lato"', "cursive"],
+      },
     },
   },
   plugins: [],

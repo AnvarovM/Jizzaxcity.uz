@@ -4,10 +4,10 @@
 
 @layer components {
   .nav_link {
-    @apply text-[1.30rem] capitalize border-purple-500 hover:border-b cursor-pointer pb-2 text-center;
+    @apply text-[1.30rem] capitalize border-b-transparent hover:border-b hover:border-purple-500 cursor-pointer pb-2 text-center;
   }
   .active {
-    @apply border-b;
+    @apply border-b border-purple-500
   }
 
   .sidebar_link {
@@ -19,11 +19,11 @@
   }
 
   .sidebar_-translate {
-    @apply fixed top-0 left-0 h-screen w-full lg:w-1/3 bg-white bg-opacity-20 transform -translate-x-full backdrop-filter backdrop-blur-md z-40 transition duration-500;
+    @apply fixed top-0 left-0 h-screen w-full lg:w-1/3 bg-black bg-opacity-20 transform -translate-x-full backdrop-filter backdrop-blur-md z-40 transition duration-500;
   }
 
   .sidebar_zero {
-    @apply fixed top-0 left-0 h-screen w-full lg:w-1/3 bg-white bg-opacity-20 transform translate-x-0 backdrop-filter backdrop-blur-md z-40 transition duration-500;
+    @apply fixed top-0 left-0 h-screen w-full lg:w-1/3 bg-black bg-opacity-20 transform translate-x-0 backdrop-filter backdrop-blur-md z-40 transition duration-500;
   }
 
   .arrows {
@@ -39,6 +39,6 @@
   }
   
   .footer-link {
-    @apply flex text-white text-sm cursor-pointer hover:underline
+    @apply flex text-white hover:text-gray-300 text-sm md:text-base font-medium cursor-pointer
   }
 }

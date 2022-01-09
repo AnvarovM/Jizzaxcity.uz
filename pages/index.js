@@ -20,6 +20,7 @@ import Section1 from '../components/indexMain/Section1';
 import Section3 from '../components/indexMain/Section3';
 import Footer from '../components/Footer';
 import Foter from '../components/Footer';
+import Section2 from '../components/indexMain/Section2';
 
 
 
@@ -82,6 +83,7 @@ export default function Home() {
       <Navbar />
       <ToTop />
       <Section1 />
+      <Section2 />
       <Section3 />
       {/* <Footer /> */}
       <Foter />
