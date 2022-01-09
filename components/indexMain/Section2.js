@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
-import React from 'react'
+import React from 'react';
 
 const Section2 = () => {
     return (
-        <div className='container mx-auto mt-16'>
+        <div className='container mx-auto mt-10 md:mt-16'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-0 items-center'>
             <div className='hidden md:block'>
                 <h3 className='text-[#333333] text-3xl font-semibold mb-10'>Buy <br /> Properties in <br /> buildings under. <br /> 
@@ -22,30 +22,30 @@ const Section2 = () => {
                              Buy Properties in buildings under
                          </h2>
                     </div>
-                    <a  onClick={() => router.push('project')} className='block md:hidden px-4 py-3 mt-4 mx-auto rounded-lg bg-white hover:bg-slate-100 active:bg-slate-300 ring-2 ring-gray-300 text-state-900 text-sm font-medium cursor-pointer'>Biz haqimizda</a>
+                    <a  onClick={() => router.push('project')} className='block md:hidden px-4 py-3 mt-4 mx-auto rounded-lg bg-white hover:bg-slate-100 active:bg-slate-300 ring-2 ring-gray-300 text-state-900 text-xs md:text-sm font-medium cursor-pointer'>Biz haqimizda</a>
                 </div> 
                 </div>
             </div>
 
-            <div className='my-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0'>
+            <div className='my-10 md:my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0'>
                 <div className='grid grid-rows-2 gap-4'>
-                    <div className='flex items-stretch border-2 hover:border-purple-600 cursor-pointer rounded-xl p-8 group'>   
+                    <div className='flex items-stretch border-2 hover:border-purple-600 cursor-pointer rounded-xl p-4 md:p-8 group'>   
                         <div className=''>
-                           <p className='text-[#333333] text-3xl font-semibold'>10 yil</p>
-                           <p className='text-xl text-[#333333] font-medium'>2012-yildan buyon</p>
+                           <p className='text-[#333333] text-2xl md:text-3xl font-semibold'>10 yil</p>
+                           <p className='text-base md:text-xl text-[#333333] font-medium truncate'>2012-yildan buyon</p>
                         </div>
                         <div className='flex items-center self-end ml-auto'>
-                            <a href="#" className='text-purple-600 font-medium group-hover:text-[#333333] group-hover:pr-2 transition-all duration-200'>Biz haqimizda</a>
+                            <a href="#" className='text-purple-600 whitespace-nowrap font-medium group-hover:text-[#333333] group-hover:pr-2 transition-all duration-200'>Biz haqimizda</a>
                             <span className='text-purple-600 group-hover:text-[#333] px-2 text-xl'>￫</span>
                         </div>
                     </div>
-                    <div className='flex items-stretch border-2 hover:border-purple-600 cursor-pointer rounded-xl p-8 group'>   
+                    <div className='flex items-stretch border-2 hover:border-purple-600 cursor-pointer rounded-xl p-4 md:p-8 group'>   
                         <div className=''>
-                           <p className='text-[#333333] text-3xl font-semibold'>10 yil</p>
-                           <p className='text-xl text-[#333333] font-medium'>2012-yildan buyon</p>
+                           <p className='text-[#333333] text-2xl md:text-3xl font-semibold'>10 yil</p>
+                           <p className='text-base md:text-xl text-[#333333] font-medium truncate'>2012-yildan buyon</p>
                         </div>
                         <div className='flex items-center self-end ml-auto'>
-                            <a href="#" className='text-purple-600 font-medium group-hover:text-[#333333] group-hover:pr-2 transition-all duration-200'>Biz haqimizda</a>
+                            <a href="#" className='text-purple-600 whitespace-nowrap font-medium group-hover:text-[#333333] group-hover:pr-2 transition-all duration-200'>Biz haqimizda</a>
                             <span className='text-purple-600 group-hover:text-[#333] px-2 text-xl'>￫</span>
                         </div>
                     </div>
@@ -55,23 +55,23 @@ const Section2 = () => {
                     <div className='absolute inset-0 h-full w-full bg-gradient-to-br from-black/60 rounded-3xl' />  
                 </div>
                 <div className='grid grid-rows-2 gap-4'>
-                    <div className='flex items-stretch border-2 hover:border-purple-600 cursor-pointer rounded-xl p-8 group'>   
+                    <div className='flex items-stretch border-2 hover:border-purple-600 cursor-pointer rounded-xl p-4 md:p-8 group'>   
                         <div className=''>
-                           <p className='text-[#333333] text-3xl font-semibold'>10 yil</p>
-                           <p className='text-xl text-[#333333] font-medium'>2012-yildan buyon</p>
+                           <p className='text-[#333333] text-2xl md:text-3xl font-semibold'>10 yil</p>
+                           <p className='text-base md:text-xl text-[#333333] font-medium truncate'>2012-yildan buyon</p>
                         </div>
                         <div className='flex items-center self-end ml-auto'>
-                            <a href="#" className='text-purple-600 font-medium group-hover:text-[#333333] group-hover:pr-2 transition-all duration-200'>Biz haqimizda</a>
+                            <a href="#" className='text-purple-600 whitespace-nowrap font-medium group-hover:text-[#333333] group-hover:pr-2 transition-all duration-200'>Biz haqimizda</a>
                             <span className='text-purple-600 group-hover:text-[#333] px-2 text-xl'>￫</span>
                         </div>
                     </div>
-                    <div className='flex items-stretch border-2 hover:border-purple-600 cursor-pointer rounded-xl p-8 group'>   
+                    <div className='flex items-stretch border-2 hover:border-purple-600 cursor-pointer rounded-xl p-4 md:p-8 group'>   
                         <div className=''>
-                           <p className='text-[#333333] text-3xl font-semibold'>10 yil</p>
-                           <p className='text-xl text-[#333333] font-medium'>2012-yildan buyon</p>
+                           <p className='text-[#333333] text-2xl md:text-3xl font-semibold'>10 yil</p>
+                           <p className='text-base md:text-xl text-[#333333] font-medium truncate'>2012-yildan buyon</p>
                         </div>
                         <div className='flex items-center self-end ml-auto'>
-                            <a href="#" className='text-purple-600 font-medium group-hover:text-[#333333] group-hover:pr-2 transition-all duration-200'>Biz haqimizda</a>
+                            <a href="#" className='text-purple-600 whitespace-nowrap font-medium group-hover:text-[#333333] group-hover:pr-2 transition-all duration-200'>Biz haqimizda</a>
                             <span className='text-purple-600 group-hover:text-[#333] px-2 text-xl'>￫</span>
                         </div>
                     </div>

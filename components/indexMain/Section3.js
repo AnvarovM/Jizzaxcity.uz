@@ -57,16 +57,16 @@ const Section3 = () => {
                 type="text"
                 placeholder="search something..."
               />
-              <button className="hidden lg:block mx-2 bg-purple-600 py-2 px-4 rounded-md active:bg-purple-500 text-white focus:ring-2 ring-purple-400">
+              <button className="hidden lg:block mx-2 bg-purple-600 hover:bg-purple-500 py-2 px-4 rounded-md active:bg-purple-500 text-white focus:ring-2 ring-purple-400">
                 submit
               </button>
             </div>
           </div>
-            <a  onClick={() => router.push('/contact')} className='block lg:hidden w-fit px-4 py-3 rounded-lg bg-white hover:bg-slate-100 active:bg-slate-300 ring-2 ring-gray-300 text-state-900 text-sm font-medium'>Lets connected</a>
+            <a  onClick={() => router.push('/contact')} className='block lg:hidden w-fit px-4 py-3 rounded-lg bg-white hover:bg-slate-100 active:bg-slate-300 ring-2 ring-gray-300 text-state-900 text-xs md:text-sm font-medium'>Lets connected</a>
         </div>
       </div>
 
-       <h1 className='text-2xl md:text-3xl lg:text-5xl font-semibold tracking-tight text-center text-[#333333] mt-16 md:mt-20'>Tez-tez so'raladigan savollar</h1>
+       <h1 className='text-2xl md:text-3xl lg:text-5xl font-semibold tracking-tight text-center text-[#333333] mt-10 md:mt-16'>Tez-tez so`nraladigan savollar</h1>
       <div className="my-10">
         {generalQuestion.map(({ question, answer }, index) => (
           <div key={index}>

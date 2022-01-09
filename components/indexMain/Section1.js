@@ -52,7 +52,7 @@ const Section1 = () => {
     ];
     return (
         <div>
-            <di className="container mx-auto grid grid-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4 md:px-0 mt-10 md:mt-16">
+            <di className="container mx-auto grid grid-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4 md:px-0 mt-5 md:mt-16">
                 <div className='flex items-center justify-center rounded-xl bg-gray-100 hover:bg-gray-200 cursor-pointer h-28 md:h-32'>
                     <div className='text-center'>
                         <h2 className='text-xl md:text-2xl font-bold text-[#333333]'>2020</h2>
@@ -95,7 +95,7 @@ const Section1 = () => {
                                             {item.title}
                                         </h2>
                                     </div>
-                                    <a  onClick={() => router.push('project')} className='px-4 py-3 rounded-lg bg-white hover:bg-slate-100 active:bg-slate-300 ring-2 ring-gray-300 text-state-900 text-sm font-medium'>Hammasini ko'rish</a>
+                                    <a  onClick={() => router.push("/project")} className='px-4 py-3 rounded-lg bg-white hover:bg-slate-100 active:bg-slate-300 ring-2 ring-gray-300 text-state-900 text-xs md:text-sm font-medium'>Hammasini ko`rish</a>
                                 </div>                   
                             </div>
                         </li>
