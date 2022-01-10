@@ -51,8 +51,8 @@ const Section1 = () => {
         },
     ];
     return (
-        <div>
-            <di className="container mx-auto grid grid-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4 md:px-0 mt-5 md:mt-16">
+        <div id='section1' className='scroll-mt-20 md:scroll-mt-32'>
+            <div className="container mx-auto grid grid-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4 md:px-0 mt-5 md:mt-16">
                 <div className='flex items-center justify-center rounded-xl bg-gray-100 hover:bg-gray-200 cursor-pointer h-28 md:h-32'>
                     <div className='text-center'>
                         <h2 className='text-xl md:text-2xl font-bold text-[#333333]'>2020</h2>
@@ -77,8 +77,8 @@ const Section1 = () => {
                         <p className='text-md md:text-xl font-semibold text-[#333333]'> Sotilgan honadonlar</p>
                     </div>
                 </div>
-            </di>
-            <div id='section1' className='mx-auto'>
+            </div>
+            <div className='mx-auto'>
                 <div className='mt-10 md:mt-24 relative'>
                     <h1 className='text-2xl md:text-3xl lg:text-5xl text-[#333333] font-semibold tracking-tight text-center'>Get away this summer</h1>
                     <ul className='mt-10 px-[50px] w-full flex overflow-x-scroll gap-8 snap-x'>

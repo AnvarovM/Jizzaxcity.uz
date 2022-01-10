@@ -14,6 +14,7 @@ import gsap, {timeline, Power3} from 'gsap'
 import Navbar from "../components/Navbar";
 import Transition from "../components/Transition";
 import Footer from "../components/Footer";
+import Section from "../components/ProjectsMain/Section";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -61,6 +62,7 @@ const about = () => {
         <Navbar />
       </div>
 
+      <Section  />
       <Footer />
     </div>
   );

@@ -19,10 +19,7 @@ import Transition from "../components/Transition";
 import Section1 from '../components/indexMain/Section1';
 import Section3 from '../components/indexMain/Section3';
 import Footer from '../components/Footer';
-import Foter from '../components/Footer';
 import Section2 from '../components/indexMain/Section2';
-
-
 
 export async function getStaticProps({ locale }) {
   return {
@@ -77,9 +74,9 @@ export default function Home() {
               <Carousel />
             </div>
 
-          <span id='#section1' className="absolute bottom-14 right-0 left-0 text-center text-white cursor-pointer">
+          <a href='#section1' className="absolute bottom-10 md:bottom-14 right-0 left-0 text-center text-white cursor-pointer">
               <IoIosArrowDown className="mx-auto text-5xl md:text-6xl animate-bounce" />
-          </span>
+          </a>
       </div>
 
       {/* components */}
@@ -88,8 +85,7 @@ export default function Home() {
       <Section1 />
       <Section2 />
       <Section3 />
-      {/* <Footer /> */}
-      <Foter />
+      <Footer />
 
     </div>
   );

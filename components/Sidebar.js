@@ -9,10 +9,10 @@ const Sidebar = ({ sidebar, setSidebar }) => {
     return (
         <div>
             <div className={sidebar ? 'sidebar_zero' : 'sidebar_-translate'}>
-                <div className='py-16 md:py-20 px-8 lg:px-20'>
+                <div className='py-10 md:py-20 px-8 lg:px-20'>
                     <div className='flex items-center justify-between'>
                         <div onClick={() => router.push("/")} className="flex justify-items-end text-white text-3xl my-8 leading-4 md:leading-6 font-semibold cursor-pointer hover:text-gray-300">
-                            <span>Jizzax</span> <br />
+                        <span>Jizzax</span> <br />
                             city
                         </div>
                         <CgClose onClick={() => setSidebar(!sidebar)} className='text-white text-2xl lg:text-3xl cursor-pointer hover:text-purple-400 transition duration-200' />
@@ -26,7 +26,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
                     </ul>
                     <div>
                         <div className='flex bg-white py-2 rounded-md flex-grow'>
-                            <input className='px-2 py-2 flex-grow outline-none' type="text" placeholder='search something...' />
+                            <input className='px-2 py-0 md:py-2 flex-grow outline-none' type="text" placeholder='search something...' />
                             <button className='hidden xl:block mx-2 bg-purple-600 py-2 px-4 rounded-md active:bg-purple-500 text-white focus:ring-2 ring-purple-400'>submit</button>
                         </div>
                         <button className='block xl:hidden w-full py-2 my-2 rounded-md bg-purple-600 active:bg-purple-500 text-white focus:ring-2 ring-purple-400'>submit</button>

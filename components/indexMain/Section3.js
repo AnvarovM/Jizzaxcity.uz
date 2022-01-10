@@ -66,7 +66,7 @@ const Section3 = () => {
         </div>
       </div>
 
-       <h1 className='text-2xl md:text-3xl lg:text-5xl font-semibold tracking-tight text-center text-[#333333] mt-10 md:mt-16'>Tez-tez so`nraladigan savollar</h1>
+       <h1 className='text-2xl md:text-3xl lg:text-5xl font-semibold tracking-tight text-center text-[#333333] mt-10 md:mt-16'>Tez-tez so&#39;raladigan savollar</h1>
       <div className="my-10">
         {generalQuestion.map(({ question, answer }, index) => (
           <div key={index}>
