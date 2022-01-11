@@ -28,8 +28,8 @@ const Navbar = () => {
     }, []);
 
   return (
-    <div className="">
-    <div className={show ?  "px-4  md:px-0 fixed top-0 left-0 right-0 z-40 text-white my-0 py-8 transition-all duration-200": "px-4 md:px-0 z-40 bg-black bg-opacity-30 backdrop-filter backdrop-blur-lg fixed top-0 left-0 right-0 text-white my-0 py-4 transition-all duration-200"}>
+    <div>
+      <div className={show ?  "px-4  md:px-0 fixed top-0 left-0 right-0 z-40 text-white my-0 py-8 transition-all duration-200": "px-4 md:px-0 z-40 bg-black bg-opacity-30 backdrop-filter backdrop-blur-lg fixed top-0 left-0 right-0 text-white my-0 py-4 transition-all duration-200"}>
         <div className="container mx-auto flex items-center justify-between ">
           <div onClick={() => router.push("/")} className="flex justify-items-end text-2xl leading-4 md:leading-6 font-semibold cursor-pointer hover:text-gray-300">
               <span>Jizzax</span> <br />
@@ -53,7 +53,7 @@ const Navbar = () => {
                       <RiArrowDropDownLine />
                       <IoLanguageSharp className="text-2xl" />
                   </div>
-                  <div className={openLanguage ? "hidden absolute -bottom-24 -left-6 border rounded-md p-2" : "block absolute -bottom-20 md:-bottom-[6rem] -left-6 border rounded-md p-2"}>
+                  <div className={openLanguage ? "hidden absolute -bottom-24 -left-6 border rounded-md p-2 " : "block absolute -bottom-20 md:-bottom-[6rem] -left-6 border rounded-md p-2 bg-black bg-opacity-30 backdrop-filter backdrop-blur-lg"}>
                           <p onClick={() => router.push("/uz", "/uz", { locale: "uz" })} className="px-2 text-center cursor-pointer hover:text-gray-300">O&apos;zb</p>
                           <p onClick={() => router.push("/ru", "/ru", { locale: "ru" })} className="px-2 text-center cursor-pointer hover:text-gray-300">Ру</p>
                           {/* <p onClick={() => router.push("/en", "/en", { locale: "en" })} className="px-2 text-center cursor-pointer hover:text-gray-300">En</p> */}
@@ -65,10 +65,12 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
       <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
       <div className="hidden md:inline-block fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
         <Search searchInput={searchInput} setSearchInput={setSearchInput} searchOn={searchOn} setSearchOn={setSearchOn} />
       </div>
+
     </div>
   );
 };

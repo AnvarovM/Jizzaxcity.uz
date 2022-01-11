@@ -40,8 +40,8 @@ const about = () => {
       marginBottom: 50,
       opacity: 0,
       ease: Power3.easeInOut
-    }, "+=1")
-  }, []);
+    }, "+=1");
+  }, [tl]);
 
   return (
     <div>
@@ -57,7 +57,7 @@ const about = () => {
         <div className="absolute top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center opacity-70 bg-gradient-to-r from-[#0c0c0c] to-[#130f40]" />
 
         <div className="absolute top-1/2 right-0 left-0 transform -translate-y-1/2 text-center text-white uppercase">
-          <h1 ref={headingRef} className="text-4xl font-medium md:text-5xl lg:text-7xl md:font-semibold tracking-wider md:hover:tracking-widest select-none transition-all duration-200 hover:text-purple-600"> {t("home:nav_about")} </h1>
+          <h1 ref={headingRef} className="text-3xl font-semibold md:text-5xl lg:text-7xl md:font-semibold tracking-wider md:hover:tracking-widest select-none transition-all duration-200 hover:text-purple-600"> {t("home:nav_about")} </h1>
         </div>
         <span className="absolute bottom-14 right-0 left-0 text-center text-white">
             <IoIosArrowDown className="mx-auto text-5xl md:text-6xl animate-bounce" />

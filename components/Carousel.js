@@ -58,7 +58,7 @@ const Carousel = () => {
                         <div className="space-y-4 md:space-y-6 max-w-screen-2xl md:max-w-screen-lg">
                             <p className="text-3xl font-semibold">{slide.paragraph}</p>
                             <h1 className="text-4xl md:text-6xl font-semibold">{slide.heading}</h1>
-                            <button onClick={() => router.push('/contact')} className="text-xl font-medium hover:bg-white hover:bg-opacity-20 hover:backdrop-filter hover:backdrop-blur-md py-4 px-6 border tracking-wider">{slide.btn}</button>
+                            <button onClick={() => router.push('/contact')} className="text-md md:text-xl px-4 py-3 md:py-4 md:px-6 font-medium hover:bg-white hover:bg-opacity-20 hover:backdrop-filter hover:backdrop-blur-md border tracking-wider">{slide.btn}</button>
                             <div className="flex justify-center w-fit space-x-2 md:space-x-4">
                                 <p onClick={prevSlides} className="arrows">↼</p>
                                 <p onClick={nextSlides} className="arrows">⇁</p>
