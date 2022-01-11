@@ -82,7 +82,7 @@ const Section = () => {
                 </label>
               </div>
               <button
-                className="shadow bg-purple-600 hover:bg-purple-500 active:text-purple-400 right-2 ring-purple-800 focus:shadow-outline focus:outline-none text-white text-sm md:text-lg whitespace-nowrap font-semibold py-2 px-6 rounded"
+                className="shadow bg-purple-600 hover:bg-purple-500 active:text-purple-400 right-2 ring-purple-800 focus:shadow-outline focus:outline-none text-white text-sm md:text-lg whitespace-nowrap font-semibold px-4 md:py-2 md:px-6 rounded-xl"
                 type="submit"
               >
                 Send Message
@@ -90,6 +90,7 @@ const Section = () => {
             </div>
           </div>
         </form>
+
         <div className="mx-auto">
             <h1 className='text-2xl lg:text-3xl text-[#333333] font-semibold tracking-tight'>Biz hozir onlinemiz</h1>
             <div className="flex space-x-5 my-4">
