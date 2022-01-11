@@ -17,6 +17,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Transition from "../components/Transition";
 import StaggerTransition from "../components/StaggerTransition";
+import Section from "../components/AboutMain/Section";
 
 // global static props
 export async function getStaticProps({ locale }) {
@@ -68,6 +69,7 @@ const about = () => {
         <Navbar />
       </div>
 
+      <Section />
       <Footer />
     </div>
   );

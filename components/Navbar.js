@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
       </div>
       <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
-      <div className="hidden md:inline-block absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="hidden md:inline-block fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
         <Search searchInput={searchInput} setSearchInput={setSearchInput} searchOn={searchOn} setSearchOn={setSearchOn} />
       </div>
     </div>

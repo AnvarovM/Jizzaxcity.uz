@@ -29,6 +29,7 @@ const Section = () => {
         {
             title: 'Best trips to play with your best friends',
             img: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/4e915376999711.5c7a83e98290c.jpg',
+            img: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/4e915376999711.5c7a83e98290c.jpg',
         },
         {
             title: 'Best trips to play with your best friends',

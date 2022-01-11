@@ -33,7 +33,7 @@ const Search = ({ searchInput, setSearchInput, searchOn, setSearchOn }) => {
     ]
     return (
         <div className={searchOn ?  '': "hidden"}>
-            <div className='group'>
+            <div className='shadow-3xl'>
                 <div className='flex flex-col w-72 md:w-[500px]'>
                     <div className='flex flex-grow items-center bg-purple-600 hover:bg-purple-500 rounded-t-xl'>
                         <input value={searchInput} onChange={(e) => setSearchInput(e.target.value)} className='flex flex-grow px-4 rounded-t-xl bg-white text-[#333] py-3 focus:outline-none focus:ring focus:border-purple-900' type="text" placeholder='Search page...' />
@@ -48,7 +48,7 @@ const Search = ({ searchInput, setSearchInput, searchOn, setSearchOn }) => {
                                     {search_data.map((item, index) => {
                                         return (
                                             <ul key={index}>
-                                                <li onClick={() => router.push(`${item.path}`)} className='py-1 px-4 text-white hover:bg-purple-500 cursor-pointer'>{item.description}</li>
+                                                <li onClick={() => router.push(`${item.path}`)} className='py-1 px-4 text-white font-semibold hover:bg-purple-500 cursor-pointer'>{item.description}</li>
                                             </ul>
                                         )
                                     })}
@@ -60,7 +60,7 @@ const Search = ({ searchInput, setSearchInput, searchOn, setSearchOn }) => {
                                 {search_data.map((item, index) => {
                                         return (
                                             <ul key={index}>
-                                                <li onClick={() => router.push(`${item.path}`)} className='py-1 px-4 text-white hover:bg-purple-500 cursor-pointer'>{item.title}</li>
+                                                <li onClick={() => router.push(`${item.path}`)} className='py-1 px-4 text-white font-semibold hover:bg-purple-500 cursor-pointer'>{item.title}</li>
                                             </ul>
                                         )
                                 })}
