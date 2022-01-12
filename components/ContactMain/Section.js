@@ -8,7 +8,7 @@ const Section = () => {
   return (
     <div className="container mx-auto px-4 md:px-0 my-10 md:my-16">
         <h1 className='text-2xl md:text-3xl lg:text-5xl text-[#333333] font-semibold tracking-tight text-center'>Hoziroq aloqaga chiqing</h1>
-      <div className="grid grid-rows-2 md:grid-rows-1 grid-cols-1 md:grid-cols-2 gap-4 my-10 md:my-16">
+      <div className="grid md:grid-rows-1 grid-cols-1 md:grid-cols-2 gap-4 my-10 md:my-16">
         <form>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
