@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react';
 import gsap, {Power4} from 'gsap'
 function Transition() {
     const trans = useRef(null);
@@ -11,12 +11,12 @@ function Transition() {
             yPercent: -100,
             ease: Power4.easeInOut
         });
-    })
+    }, [timeline])
     return (
-        <div className='overflow-y-hidden'>
-           <div className="absolute top-0 z-50 w-full h-full bg-purple-500" ref={trans}></div> 
+        <div>
+           <div ref={trans} className="absolute top-0 z-50 w-full h-screen bg-purple-500"></div> 
         </div>
     )
 }
 
-export default Transition
+export default Transition;

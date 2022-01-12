@@ -43,6 +43,7 @@ const about = () => {
   }, [tl])
   return (
     <div>
+      <Transition />
       <div className="relative w-full h-full">
         <div className="w-full h-screen">
           <Image
@@ -62,12 +63,12 @@ const about = () => {
         </span>
 
         {/* components */}
-        <Transition />
+        
         <Navbar />
       </div>
-
       <Section />
       <Footer />
+
     </div>
   );
 };
