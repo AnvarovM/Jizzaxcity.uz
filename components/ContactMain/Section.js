@@ -7,8 +7,34 @@ import { AiOutlineMail } from 'react-icons/ai';
 const Section = () => {
   return (
     <div className="container mx-auto px-4 md:px-0 my-10 md:my-16">
-        <h1 className='text-2xl md:text-3xl lg:text-5xl text-[#333333] font-semibold tracking-tight text-center'>Hoziroq aloqaga chiqing</h1>
+        <h1 className='hidden md:block text-2xl md:text-3xl lg:text-5xl text-[#333333] font-semibold tracking-tight text-center'>Hoziroq aloqaga chiqing</h1>
       <div className="grid md:grid-rows-1 grid-cols-1 md:grid-cols-2 gap-4 my-10 md:my-16">
+      <div className="mx-auto">
+            <h1 className='text-2xl lg:text-3xl text-[#333333] font-semibold tracking-tight'>Biz hozir tarmoqdamiz</h1>
+            <div className="flex space-x-5 my-4">
+                <FaFacebookF className="p-2 md:p-4 border-2 border-purple-600 rounded-lg md:rounded-2xl cursor-pointer text-[#333] text-4xl md:text-6xl" />
+                <FaTelegramPlane className="p-2 md:p-4 border-2 border-purple-600 rounded-lg md:rounded-2xl cursor-pointer text-[#333] text-4xl md:text-6xl" />
+                <FaInstagram className="p-2 md:p-4 border-2 border-purple-600 rounded-lg md:rounded-2xl cursor-pointer text-[#333] text-4xl md:text-6xl" />
+                <FaPhoneAlt className="p-2 md:p-4 border-2 border-purple-600 rounded-lg md:rounded-2xl cursor-pointer text-[#333] text-4xl md:text-6xl" />
+            </div>
+            <div className="md:my-10">
+                <h1 className='text-2xl lg:text-3xl text-[#333333] font-semibold tracking-tight'>Aloqa uchun</h1>
+                <div className="py-4 space-y-4">
+                    <div className="flex items-center space-x-2">
+                        <IoLocationOutline className="text-[#333] text-3xl" />
+                        <p className="">MJ Developers 704 One By Omniyat Business Bay, Dubai, UAE</p>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                        <FaPhoneAlt className="text-[#333] text-2xl" />
+                        <p className="">+99899-777-12-12</p>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                        <AiOutlineMail className="text-[#333] text-2xl" />
+                        <p className="">example@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <form>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -70,7 +96,7 @@ const Section = () => {
               </label>
               <textarea
                 placeholder="Men bilan aloqaga chiqib yuboringlar."
-                rows="5"
+                rows="8"
                 className="appearance-none block w-full bg-gray-100 text-gray-700 ring-2 border-gray-200 rounded-xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:ring-purple-600"
               />
             </div>
@@ -90,33 +116,6 @@ const Section = () => {
             </div>
           </div>
         </form>
-
-        <div className="mx-auto">
-            <h1 className='text-2xl lg:text-3xl text-[#333333] font-semibold tracking-tight'>Biz hozir onlinemiz</h1>
-            <div className="flex space-x-5 my-4">
-                <FaFacebookF className="p-2 md:p-4 border-2 border-purple-600 rounded-lg md:rounded-2xl cursor-pointer text-[#333] text-4xl md:text-6xl" />
-                <FaTelegramPlane className="p-2 md:p-4 border-2 border-purple-600 rounded-lg md:rounded-2xl cursor-pointer text-[#333] text-4xl md:text-6xl" />
-                <FaInstagram className="p-2 md:p-4 border-2 border-purple-600 rounded-lg md:rounded-2xl cursor-pointer text-[#333] text-4xl md:text-6xl" />
-                <FaPhoneAlt className="p-2 md:p-4 border-2 border-purple-600 rounded-lg md:rounded-2xl cursor-pointer text-[#333] text-4xl md:text-6xl" />
-            </div>
-            <div className="md:my-10">
-                <h1 className='text-2xl lg:text-3xl text-[#333333] font-semibold tracking-tight'>Aloqa uchun</h1>
-                <div className="py-4 space-y-4">
-                    <div className="flex items-center space-x-2">
-                        <IoLocationOutline className="text-[#333] text-3xl" />
-                        <p className="">MJ Developers 704 One By Omniyat Business Bay, Dubai, UAE</p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                        <FaPhoneAlt className="text-[#333] text-2xl" />
-                        <p className="">+99899-777-12-12</p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                        <AiOutlineMail className="text-[#333] text-2xl" />
-                        <p className="">example@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
       </div>
     </div>
   );
