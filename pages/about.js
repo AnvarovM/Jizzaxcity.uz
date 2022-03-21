@@ -64,8 +64,7 @@ const about = () => {
         </span>
 
         {/* components */}
-        <Transition />
-        {/* <StaggerTransition /> */}
+        {/* <Transition /> */}
         <Navbar />
       </div>
 

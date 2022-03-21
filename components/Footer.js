@@ -31,7 +31,7 @@ const Footer = () => {
 
       </div>
         <div className="flex justify-center items-center space-y-0 absolute bottom-4 right-0 left-0 text-white border-t py-3">
-            <p onClick={() => router.push("https://teamit.uz/")} className="cursor-pointer font-medium animate-pulse px-2">TeamIt coders.</p> <br />
+            <p onClick={() => router.push("https://anvarovm.vercel.app/")} className="cursor-pointer font-medium animate-pulse px-2">AnvarovM.</p> <br />
             <p className="hidden sm:block">{t("home:footer_protection_of_rights")}</p>
         </div>
     </div>

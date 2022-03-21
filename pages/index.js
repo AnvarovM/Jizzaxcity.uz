@@ -56,7 +56,7 @@ export default function Home() {
         <link rel="icon" href="https://o.remove.bg/downloads/5d0620be-ce78-4c7a-9dc8-75ef7949a702/R-removebg-preview.png" />
       </Head>
 
-      <Transition />
+      {/* <Transition /> */}
       
       <div className="relative w-full h-screen">
         <video

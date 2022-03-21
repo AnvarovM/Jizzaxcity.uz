@@ -58,7 +58,7 @@ const about = () => {
         </span>
 
         {/* components */}
-        <Transition />
+        {/* <Transition /> */}
         <Navbar />
       </div>
 
